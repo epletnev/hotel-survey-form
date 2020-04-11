@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header>
+    <h1 id="title">Hotel Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our service</p>
+  </header>
+  <form id="survey-form">
+
+    <div class="group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="control" placeholder="Enter your name" required />
+    </div>
+    <div class="group">
+      <label id="email-label" for="Email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your Email" class="control" required />
+    </div>
+    <div class="group">
+      <label id="number-label" for="number">Age</label>
+      <input type="number" name="age" id="number" min="16" max="100" placeholder="Enter your age" class="control" required />
+    </div>
+    <div class="group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="full-time">Full Time Job</option>
+        <option value="part-time">Part Time Job</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="group">
+      <p>Would you recommend our hotel to a friend?</p>
+      <label>
+        <input
+          name="recommend"
+          value="definitely"
+          type="radio"
+          class="radio"
+          checked
+        />Definitely</label>
+
+      <label>
+        <input
+          name="recommend"
+          value="maybe"
+          type="radio"
+          class="radio"
+         />Maybe</label>
+
+      <label>
+        <input
+          name="recommend"
+          value="not-sure"
+          type="radio"
+          class="radio"
+          />Not sure</label>
+    </div>
+
+    <div class="group">
+      <p>
+        What is your favorite feature of our hotel?
+      </p>
+      <select id="feature" name="feature" class="control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="rooms">Rooms</option>
+        <option value="design">Design</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="service">Service</option>
+        <option value="location">Location</option>
+      </select>
+    </div>
+
+    <div class="group">
+      <p>
+        What should we do better?
+        <span>(Check all that apply)</span>
+      </p>
+      <label>
+        <input
+          name="better"
+          value="reservation"
+          type="checkbox"  
+          class="checkbox"
+        />Reservation</label>
+      <label>
+        <input
+          name="better"
+          value="checkin"
+          type="checkbox"  
+          class="checkbox"
+        />Check-in</label>
+
+      <label>
+        <input
+          name="better"
+          value="cleanliness"
+          type="checkbox"  
+          class="checkbox"
+        />Cleanliness</label>
+
+      <label>
+        <input
+          name="better"
+          value="accomodation"
+          type="checkbox"  
+          class="checkbox"
+        />Accomodation</label>
+
+      <label>
+        <input
+          name="better"
+          value="breakfast"
+          type="checkbox"  
+          class="checkbox"
+        />Breakfast</label>
+    </div>
+
+    <div class="group">
+      <p>Any comments or suggestions?</p>
+      <textarea id="suggestions" name="suggestions" class="textarea" placeholder="Enter your comments here..."></textarea>
+    </div>
+
+    <div class="group">
+      <button id="submit" type="submit" class="submit">Submit</button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
